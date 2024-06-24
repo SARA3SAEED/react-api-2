@@ -25,10 +25,9 @@ function App() {
   return (
     <>
 
-    <div className=" m-9 flex flex-wrap">
-     <div className=" card card-compact bg-base-100 w-96 p-9 shadow-xl">
+    <div className=" m-9 flex flex-wrap bg-base-100  p-9 shadow-xl">
      {photo.map(photo =>(
-             <div className="text-center" key={photo.id} >
+             <div className="text-center m-2" key={photo.id} >
              <img src={photo.image}/>
                 <small>{photo.id}</small>
                 <h2>{photo.name}</h2>
@@ -36,7 +35,6 @@ function App() {
               </div>
             ))}
         
-      </div>
       </div>
     </>
   )
